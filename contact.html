@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lakshmi Strom | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("topNav");
+            if(x.className === "navbar-white"){
+                x.className += " responsive";
+            } else {
+                x.className = "navbar-white";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- navigation for the entire website -->
+    <header>
+        <nav id="topNav" class="navbar-white">
+            <div class="container">
+                <img class="logo" src="assets/images/mylogo.png" alt="Lakshmi Strom's Logo" />
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">ABOUT |</a>
+                    <a href="portfolio.html">PORTFOLIO |</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container padding-y">
+        <h2 class="pb-15 heading-border mb-15">CONTACT</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" />
+            <label for="email" required>Email</label>
+            <input type="text" id="email" name="email" placeholder="example@gmail.com" />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="..."></textarea>
+        </form>
+        <a class="submit" href="mailto:lakshmialeman@gmail.com">Submit</a>
+    </section>
+    <footer>
+        <div class="container">
+            <p>www.lakshmistrom.com &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+/* styles for the overall look of the portfolio site */
+/*********************/
+/* Colors*/
+/* black: #000000;
+grey: #666666;
+white: #FFFFFF;
+light-pink: #ED2C92;
+dark-pink: #ED2C92 */
+/*********************/
+
+/*********************/
+/* BASIC */
+/*********************/
+*{
+    box-sizing: border-box;
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+    padding-top: 46px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	margin: 0;
+	font-size: 1.3rem;
+    letter-spacing: 1px;
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+    background-image: url("../images/cover.png");
+    background-position: center;
+    background-clip: padding-box;
+}
+
+a{
+	color: dimgray;
+}
+a:focus, a:hover{
+	color: #ED2C92;
+	text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+ul{
+    list-style: disc;
+}
+/*********************/
+/* MAIN */
+/*********************/
+
+.logo {
+    max-width: 19%;
+    height: auto;
+    display: block;
+    float: left;
+}
+.no-margin-top{
+	margin-top: 0;
+}
+.pb-15{
+	padding-bottom: 15px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.heading-border{
+    border-bottom: 2px solid dimgray;
+}
+.container{
+    width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.padding-y{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#character-img{
+    width: 100%;
+    max-width: 15%;
+    height: auto;
+    display: block;
+    float: left;
+    padding: 0 15px 15px 0;
+}
+section.container{
+    background-color: white;
+    border: 1px solid #e7e7e7;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*********************/
+/* MAIN NAV */
+/*********************/
+.navbar-white {
+	background-color: white;
+    border: 1px solid #e7e7e7;
+    overflow-x: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.nav-links{
+    float: right;
+}
+.navbar-white a{
+    float: left;
+    text-align: center;
+    padding: 14px 0 14px 7px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.navbar-white .icon {
+    display: none;
+}
+/*********************/
+/* CONTACT */
+/*********************/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+.submit{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+.submit:hover {
+    background-color: #e7e7e7;
+}
+
+/*********************/
+/* PORTFOLIO */
+/*********************/
+/* Create four equal columns that floats next to each other */
+.col {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.light-grey{
+    color: #e7e7e7;
+}
+.dark-grey{
+    color: dimgray;
+}
+.white{
+    background-color: white;
+}
+.fa-layers-text:hover{
+    color: #ED2C92;
+}
+.overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 69%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+/*********************/
+/* FOOTER */
+/*********************/
+footer {
+    position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	background-color: dimgray;
+    border-top: 8px solid #e7e7e7;
+    color: #e7e7e7;
+}
+footer p{
+    font-size: 0.7rem;
+    padding: 20px 0;
+    text-align: center;
+}
+.smaller-image{
+    width: 50%;
+    height: 50%;
+}
+/*********************/
+/* RESPONSIVE */
+/*********************/
+@media screen and (max-width: 600px) {
+    /* main area */
+    .container{
+        width: 100%;
+    }
+    #character-img{
+        max-width: 100%;
+    }
+    /* portfolio area */
+    /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+    .col {
+        width: 100%;
+    }
+    /* navigation area */
+    .logo{
+        max-width: 44%;
+    }
+    .navbar-white a {
+        display: none;
+    }
+    .nav-links {
+        width: 100%;
+    }
+    .navbar-white a.icon {
+      float: right;
+      display: block;
+    }
+    .navbar-white.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar-white.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding-right: 15px;
+    }
+}
