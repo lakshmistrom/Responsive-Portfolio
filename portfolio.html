@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
-    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
+        crossorigin="anonymous"></script>
     <script>
-        function myFunction(){
-            var x = document.getElementById("topNav");
-            if(x.className === "navbar-white"){
-                x.className += " responsive";
-            } else {
-                x.className = "navbar-white";
-            }
-        }
         function on(id) {
             document.getElementById(id).style.display = "block";
         }
@@ -27,20 +21,17 @@
         }
     </script>
 </head>
+
 <body>
     <!-- navigation for the entire website -->
     <header>
         <nav id="topNav" class="navbar-white">
-            <div class="container">
-                <img class="logo" src="assets/images/mylogo.png" alt="Lakshmi Strom's Logo" />
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fas fa-bars"></i>
-                </a>
-                <div class="nav-links">
-                    <a href="index.html">ABOUT |</a>
-                    <a href="portfolio.html">PORTFOLIO |</a>
-                    <a href="contact.html">CONTACT</a>
-                </div>
+            <img class="logo" src="assets/images/mylogo.png" alt="Lakshmi Strom's Logo" />
+
+            <div class="nav-links">
+                <a href="index.html">ABOUT</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="contact.html">CONTACT</a>
             </div>
         </nav>
     </header>
@@ -51,44 +42,47 @@
                 <a onclick="on('web')">
                     <span class="fa-7x">
                         <span class="fa-layers fa-fw">
-                            <i class="fas fa-circle light-grey" ></i>
+                            <i class="fas fa-circle light-grey"></i>
                             <i class="fas fa-globe-americas dark-grey" data-fa-transform="shrink-8 up-1"></i>
-                            <span class="fa-layers-text"  data-fa-transform="shrink-14 down-4.7">WEB</span>
+                            <span class="fa-layers-text" data-fa-transform="shrink-14 down-4.7">WEB</span>
                         </span>
                     </span>
                 </a>
                 <div id="web" class="overlay" onclick="off('web')">
-                    <iframe src="https://cors-anywhere.herokuapp.com/https://www.lakshmistrom.com/index.html" class="text"></iframe>
+                    <iframe src="https://www.lakshmistrom.com/" class="text"></iframe>
                 </div>
             </div>
             <div class="col">
                 <a onclick="on('graphic')">
                     <span class="fa-7x">
                         <span class="fa-layers fa-fw">
-                            <i class="fas fa-circle light-grey" ></i>
+                            <i class="fas fa-circle light-grey"></i>
                             <i class="fas fa-pen-fancy dark-grey" data-fa-transform="shrink-8 up-1"></i>
-                        <span class="fa-layers-text"  data-fa-transform="shrink-14 down-4.7">GRAPHIC</span>
-                    </span>
+                            <span class="fa-layers-text" data-fa-transform="shrink-14 down-4.7">GRAPHIC</span>
+                        </span>
                 </a>
                 <div id="graphic" class="overlay" onclick="off('graphic')">
                     <div class="text">
                         <div class="row">
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/gd/financialaidlogo_2.jpg" alt="Cal Poly Pomona Financial Aid Office Logo"/>
+                                <img class="smaller-image" src="assets/images/gd/financialaidlogo_2.jpg" alt="Cal Poly Pomona Financial Aid Office Logo"
+                                />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/gd/cpp_fa_newsletter.png" alt="Cal Poly Pomona Financial Aid Office Newsletter"/>
+                                <img class="smaller-image" src="assets/images/gd/cpp_fa_newsletter.png" alt="Cal Poly Pomona Financial Aid Office Newsletter"
+                                />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/gd/book_divider.png" alt="Cal Poly Pomona Financial Aid Office Book Divider"/>
+                                <img class="smaller-image" src="assets/images/gd/book_divider.png" alt="Cal Poly Pomona Financial Aid Office Book Divider"
+                                />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/gd/manualR.png" alt="Book Cover Design"/>
+                                <img class="smaller-image" src="assets/images/gd/manualR.png" alt="Book Cover Design" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/gd/poster.png" alt="Energy Poster"/>
+                                <img class="smaller-image" src="assets/images/gd/poster.png" alt="Energy Poster" />
                             </div>
                         </div>
                     </div>
@@ -98,9 +92,9 @@
                 <a onclick="on('mobile')">
                     <span class="fa-7x">
                         <span class="fa-layers fa-fw">
-                            <i class="fas fa-circle light-grey" ></i>
+                            <i class="fas fa-circle light-grey"></i>
                             <i class="fas fa-mobile-alt dark-grey" data-fa-transform="shrink-8 up-1"></i>
-                            <span class="fa-layers-text"  data-fa-transform="shrink-14 down-4.7">MOBILE</span>
+                            <span class="fa-layers-text" data-fa-transform="shrink-14 down-4.7">MOBILE</span>
                         </span>
                     </span>
                 </a>
@@ -108,22 +102,22 @@
                     <div class="text">
                         <div class="row">
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/mobile/main.png" alt="main page design"/>
+                                <img class="smaller-image" src="assets/images/mobile/main.png" alt="main page design" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/mobile/description.png" alt="description page design"/>
+                                <img class="smaller-image" src="assets/images/mobile/description.png" alt="description page design" />
                             </div>
                             <div class="col">
-                                    <img class="smaller-image" src="assets/images/mobile/images.png" alt="images page design"/>
+                                <img class="smaller-image" src="assets/images/mobile/images.png" alt="images page design" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/mobile/location.png" alt="location page design"/>
+                                <img class="smaller-image" src="assets/images/mobile/location.png" alt="location page design" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/mobile/submit.png" alt="submit page design"/>
+                                <img class="smaller-image" src="assets/images/mobile/submit.png" alt="submit page design" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/mobile/icon.png" alt="icon design"/>
+                                <img class="smaller-image" src="assets/images/mobile/icon.png" alt="icon design" />
                             </div>
                         </div>
                     </div>
@@ -133,14 +127,14 @@
                 <a onclick="on('motion')">
                     <span class="fa-7x">
                         <span class="fa-layers fa-fw">
-                            <i class="fas fa-circle light-grey" ></i>
+                            <i class="fas fa-circle light-grey"></i>
                             <i class="fas fa-play-circle dark-grey" data-fa-transform="shrink-8 up-1"></i>
-                            <span class="fa-layers-text"  data-fa-transform="shrink-14 down-4.7">MOTION</span>
+                            <span class="fa-layers-text" data-fa-transform="shrink-14 down-4.7">MOTION</span>
                         </span>
                     </span>
                 </a>
                 <div id="motion" class="overlay" onclick="off('motion')">
-                    <iframe class="text" src="assets/movies/After_Effects_Demo.mp4"></iframe>    
+                    <iframe class="text" src="assets/movies/After_Effects_Demo.mp4"></iframe>
                 </div>
             </div>
         </div>
@@ -149,9 +143,9 @@
                 <a onclick="on('art')">
                     <span class="fa-7x">
                         <span class="fa-layers fa-fw">
-                            <i class="fas fa-circle light-grey" ></i>
+                            <i class="fas fa-circle light-grey"></i>
                             <i class="fas fa-palette dark-grey" data-fa-transform="shrink-8 up-1"></i>
-                            <span class="fa-layers-text"  data-fa-transform="shrink-14 down-4.7">ART</span>
+                            <span class="fa-layers-text" data-fa-transform="shrink-14 down-4.7">ART</span>
                         </span>
                     </span>
                 </a>
@@ -159,24 +153,24 @@
                     <div class="text">
                         <div class="row">
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/art/noodles.jpg" alt="Painting inspired by Pop Art"/>
+                                <img class="smaller-image" src="assets/images/art/noodles.jpg" alt="Painting inspired by Pop Art" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/art/blue.jpg" alt="Painting of a woman sleeping"/>
+                                <img class="smaller-image" src="assets/images/art/blue.jpg" alt="Painting of a woman sleeping" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/art/grey.jpg" alt="Painting of a man"/>
+                                <img class="smaller-image" src="assets/images/art/grey.jpg" alt="Painting of a man" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/art/nude1.jpg" alt="location page design"/>
+                                <img class="smaller-image" src="assets/images/art/nude1.jpg" alt="location page design" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/art/nude2.jpg" alt="Painting of nude woman using fingers as paint brush"/>
+                                <img class="smaller-image" src="assets/images/art/nude2.jpg" alt="Painting of nude woman using fingers as paint brush" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/art/nude3.jpg" alt="Painting of back view of a nude woman"/>
+                                <img class="smaller-image" src="assets/images/art/nude3.jpg" alt="Painting of back view of a nude woman" />
                             </div>
                         </div>
                     </div>
@@ -186,9 +180,9 @@
                 <a onclick="on('photo')">
                     <span class="fa-7x">
                         <span class="fa-layers fa-fw">
-                            <i class="fas fa-circle light-grey" ></i>
+                            <i class="fas fa-circle light-grey"></i>
                             <i class="fas fa-camera-retro dark-grey" data-fa-transform="shrink-8 up-1"></i>
-                            <span class="fa-layers-text"  data-fa-transform="shrink-14 down-4.7">PHOTO</span>
+                            <span class="fa-layers-text" data-fa-transform="shrink-14 down-4.7">PHOTO</span>
                         </span>
                     </span>
                 </a>
@@ -196,16 +190,16 @@
                     <div class="text">
                         <div class="row">
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/photo/airplane.jpg" alt="Picture of airplane"/>
+                                <img class="smaller-image" src="assets/images/photo/airplane.jpg" alt="Picture of airplane" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/photo/helicopter.jpg" alt="Picture of a helicopter"/>
+                                <img class="smaller-image" src="assets/images/photo/helicopter.jpg" alt="Picture of a helicopter" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/photo/fwslides.jpg" alt="Picture of fireworks"/>
+                                <img class="smaller-image" src="assets/images/photo/fwslides.jpg" alt="Picture of fireworks" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/photo/fwslides2.jpg" alt="Picture of fireworks taken an Oregon Air Show"/>
+                                <img class="smaller-image" src="assets/images/photo/fwslides2.jpg" alt="Picture of fireworks taken an Oregon Air Show" />
                             </div>
                         </div>
                     </div>
@@ -215,9 +209,9 @@
                 <a onclick="on('logo')">
                     <div class="fa-7x">
                         <span class="fa-layers fa-fw">
-                            <i class="fas fa-circle light-grey" ></i>
+                            <i class="fas fa-circle light-grey"></i>
                             <i class="fas fa-user-circle dark-grey" data-fa-transform="shrink-8 up-1"></i>
-                            <span class="fa-layers-text"  data-fa-transform="shrink-14 down-4.7">LOGO</span>
+                            <span class="fa-layers-text" data-fa-transform="shrink-14 down-4.7">LOGO</span>
                         </span>
                     </div>
                 </a>
@@ -225,13 +219,13 @@
                     <div class="text">
                         <div class="row">
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/logo/financial.png" alt="Cal Poly Pomona Financial Aid Logo Proposal"/>
+                                <img class="smaller-image" src="assets/images/logo/financial.png" alt="Cal Poly Pomona Financial Aid Logo Proposal" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/logo/harvest.png" alt="Cal Poly Pomona Harvest International Logo"/>
+                                <img class="smaller-image" src="assets/images/logo/harvest.png" alt="Cal Poly Pomona Harvest International Logo" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/logo/rasputin.png" alt="Rasputin Restaurant logo proposal"/>
+                                <img class="smaller-image" src="assets/images/logo/rasputin.png" alt="Rasputin Restaurant logo proposal" />
                             </div>
                         </div>
                     </div>
@@ -241,9 +235,9 @@
                 <a onclick="on('identity')">
                     <div class="fa-7x">
                         <span class="fa-layers fa-fw">
-                            <i class="fas fa-circle light-grey" ></i>
+                            <i class="fas fa-circle light-grey"></i>
                             <i class="fas fa-glasses dark-grey" data-fa-transform="shrink-8 up-1"></i>
-                            <span class="fa-layers-text"  data-fa-transform="shrink-14 down-4.7">IDENTITY</span>
+                            <span class="fa-layers-text" data-fa-transform="shrink-14 down-4.7">IDENTITY</span>
                         </span>
                     </div>
                 </a>
@@ -251,16 +245,19 @@
                     <div class="text">
                         <div class="row">
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/identity/cap.png" alt="Bottle of wine cap for Rasputing Restaurant proposal"/>
+                                <img class="smaller-image" src="assets/images/identity/cap.png" alt="Bottle of wine cap for Rasputing Restaurant proposal"
+                                />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/identity/game.png" alt="Drinking game for Rasputing Restaurant proposal"/>
+                                <img class="smaller-image" src="assets/images/identity/game.png" alt="Drinking game for Rasputing Restaurant proposal" />
                             </div>
                             <div class="col">
-                                <img class="smaller-image" src="assets/images/identity/package.png" alt="Packaging of unique gift for Rasputing Restaurant proposal"/>
+                                <img class="smaller-image" src="assets/images/identity/package.png" alt="Packaging of unique gift for Rasputing Restaurant proposal"
+                                />
                             </div>
                             <div class="col">
-                                <img class="smaller-image white" src="assets/images/characterlogo_big.png" alt="Lakshmi Strom's personal character design"/>
+                                <img class="smaller-image white" src="assets/images/characterlogo_big.png" alt="Lakshmi Strom's personal character design"
+                                />
                             </div>
                         </div>
                     </div>
